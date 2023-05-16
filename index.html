@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Perfil profesional :p</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2 class="gradient-text">PERFIL PERSONAL</h2>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#sobremi" onclick="seleccionar()" >Sobre Mí</a>
+                <a href="#curriculum" onclick="seleccionar()">Currículum</a>
+                <a href="#porfolio" onclick="seleccionar()">Porfolio</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>Soy Nicolás Núñez</p>
+                    <h1 class="gradient-text">Ingeniero en informática </h1>
+                    <form style="display: inline" action="CVNicolas.pdf"> 
+                        <button>
+                            Descarga mi CV <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="https://i.imgur.com/if8Flcu.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremi">
+            <div class="fila">
+                <div class="col info">
+                    <h3>Sobre Mí</h3>
+                    <p>Mi nombre es Nicolás Núñez Puga, tengo 22 años y me encuentro cursando el tercer semestre de la carrera ingienería en informática, en el instituto Santo Tomás. Estudié en un liceo politécnico y me títule de Técnico en telecomunicaciones. Tengo conociemientos sobre lenguajes como Python, JavaScript, Css, y HTML. Poseo habilidades en el diseño de páginas web. Se me da bien eligiendo dieseños o estilos para páginas e interfaces de usuarios. Trabajo en equipo, colaborador, proactivo e independiente</p>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum">
+            <h3>Currículum</h3>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <p class="experiencia">Experiencia</p>
+                            <span class="circulo"></span>
+                            <h4>Trabajador Multifuncional - Líder</h4>
+                            <p>(2020-2021)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Repondedor nocturno - Jumbo</h4>
+                            <p>(Junio 2021- Diciembre 2021)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <p class="experiencia">Educación</p>
+                            <span class="circulo"></span>
+                            <h4>Enseñanza básica</h4>
+                            <p>Colegio Hermanos Carrera (2007-2014)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Enseñanza media</h4>
+                            <p>Liceo politécnico Hannover (2015-2020)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Enseñanza superior</h4>
+                            <p>IP CFT Santo Tomás (2021-Cursando)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección porfolio -->
+        <section id="porfolio">
+            <h3>Porfolio</h3>
+            <div class="fila">
+                <div class="col">
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/EvI19iC.png" alt="">
+                        <p class="desc">App Pedidos</p>
+                    </div>
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/pgkLgFY.png" alt="">
+                        <p class="desc">App almacenes pt1</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/5NacACx.png" alt="">
+                        <p class="desc">Wiki</p>
+                    </div>
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/s8C9I9E.png" alt="">
+                        <p class="desc">App almacenes pt2</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/1tZMAFV.png" alt="">
+                        <p class="desc">App Reloj1</p>
+                    </div>
+                    <div class="trabajo">
+                        <img src="https://i.imgur.com/UCsfkPB.png" alt="">
+                        <p class="desc">App Reloj2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección contacto -->
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-square-whatsapp gradient-text" button onclick="location.href='https://wa.me/56984075764?text=Hola%20:)'"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram gradient-text" button onclick="location.href='https://www.instagram.com/_niko.neko_/'"></i></a>
+                <a href="#"><i class="fa-brands fa-square-youtube gradient-text" button onclick="location.href='https://youtu.be/L7weqx26hjU'"></i></a> 
+            </div>
+            <form>
+                <div class="entrada">
+                    <label>Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label>Correo</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label>Tema</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
